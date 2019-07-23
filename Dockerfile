@@ -13,6 +13,7 @@ RUN mkdir runtime-installer && cd runtime-installer \
 
 RUN chmod a+x /opt/magicsquare
 
-ENV LD_LIBRARY_PATH=/usr/local/MATLAB/MATLAB_Runtime/v96/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v96/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v96/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v96/extern/bin/glnxa64
+ENV LD_LIBRARY_PATH=/usr/local/MATLAB/MATLAB_Runtime/v95/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v95/extern/bin/glnxa64
+ENV PATH=/opt:$PATH
 ENV MCR_CACHE_VERBOSE=true
 ENV MCR_CACHE_ROOT=/tmp
